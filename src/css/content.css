@@ -1,0 +1,89 @@
+draw-canvas {
+    display: inline-block;
+    cursor: crosshair;
+    margin: 4px 12px 12px;
+}
+.kinDraw-draw {
+    padding: 0 8px;
+    height: 24px;
+    line-height: 24px;
+    color: #3498db;
+    border-style: solid;
+    border-color: #e3e7e8;
+    border-width: 0 0 0 1px;
+}
+.kinDraw-options {
+    font-family: monospace;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin: 8px 12px 4px;
+}
+.kinDraw-options button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    padding: 3px 8px;
+
+    /* .kinDraw-options font styles are overwritten by argo.css, so specify it here too */
+    font-family: monospace;
+    font-size: 12px;
+}
+.kinDraw-options label {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+.kinDraw-options input {
+    margin-left: 4px;
+    width: 50px;
+    padding: 1px 6px;
+
+    /* .kinDraw-options font styles are overwritten by argo.css, so specify it here too */
+    font-family: monospace;
+    font-size: 12px;
+}
+.kinDraw-load-image {
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 3px 8px;
+}
+.kinDraw-cancel {
+    margin-left: 16px;
+    min-width: 163px;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+    border: 1px solid #e3e7e8;
+    background-color: #f7f9fa;
+    box-shadow: 1px 1px 1px #fff inset;
+    color: #3498db;
+    cursor: pointer;
+}
+.kinDraw-cancel:hover {
+    background-color: #c8d6dd;
+    box-shadow: none;
+}
+.kinDraw-upload {
+    margin: 16px 0 16px 16px;
+    min-width: 163px;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+    border: 1px solid #e3e7e8;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+.kinDraw-upload:hover {
+    background-color: #1d6fa5;
+}
