@@ -1,0 +1,49 @@
+{
+  "name": "kinDraw",
+  "manifest_version": 2,
+  "description": "This adds canvas for drawing a picture and inserting them in kintone comment boxes.",
+  "homepage_url": "https://github.com/miyajan/kinDraw",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "kinDraw"
+  },
+  "permissions": [
+    "https://*.cybozu.com/k/*",
+    "https://*.cybozu-dev.com/k/*",
+    "https://*.kintone.com/k/*",
+    "https://*.kintone-dev.com/k/*",
+    "https://*.cybozu.cn/k/*",
+    "https://*.cybozu-dev.cn/k/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.cybozu.com/k/*",
+        "https://*.cybozu-dev.com/k/*",
+        "https://*.kintone.com/k/*",
+        "https://*.kintone-dev.com/k/*",
+        "https://*.cybozu.cn/k/*",
+        "https://*.cybozu-dev.cn/k/*"
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "css": [
+        "css/content.css"
+      ],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "js/kinDraw.js"
+  ]
+}
